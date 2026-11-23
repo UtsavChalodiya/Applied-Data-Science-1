@@ -1,19 +1,14 @@
 # Applied Data Science
 
-This repository contains work for an applied data science module, using notebooks and data analysis workflows to practise turning data into interpretable findings.
+This repository contains notebook-based work completed as part of an applied data science module. It is a learning portfolio of practical data preparation, exploration, analysis and visual communication.
 
-## Project goals
+## What to look for
 
-- Apply a structured data analysis workflow
-- Explore and prepare data for analysis
-- Use code and visualisations to communicate observations
-- Document the process so the work can be reviewed and reproduced
+- The Jupyter notebook(s) contain the analysis workflow and code.
+- Review the notebook markdown and outputs for the dataset-specific questions, methods and observations.
+- The exact packages and input data paths should be checked in the notebook before reproducing the analysis.
 
-## Tools
-
-The work is notebook-based. Check the notebook imports for the exact library versions and dependencies used in the analysis.
-
-## Getting started
+## Run locally
 
 1. Clone the repository:
 
@@ -22,40 +17,35 @@ The work is notebook-based. Check the notebook imports for the exact library ver
    cd Applied-Data-Science-1
    ```
 
-2. Create a virtual environment:
+2. Create and activate a virtual environment:
 
    ```bash
    python -m venv .venv
-   ```
-
-   Windows:
-   ```bash
+   # Windows
    .venv\Scripts\activate
-   ```
-
-   macOS/Linux:
-   ```bash
+   # macOS / Linux
    source .venv/bin/activate
    ```
 
-3. Install Jupyter and the packages imported by the notebook, then launch:
+3. Install Jupyter and the libraries imported by the notebook:
 
    ```bash
    pip install jupyter
+   ```
+
+4. Launch Jupyter and open the notebook:
+
+   ```bash
    jupyter notebook
    ```
 
-4. Open the notebook in the repository and run the cells in order. If the notebook uses a local dataset, keep it in the path expected by the notebook.
+Keep any required input files in the paths referenced by the notebook. If a cell fails because a package is missing, install the package named in that cell's import statement.
 
-## Repository
+## Making this project easier to assess
 
-[View the code and notebooks](https://github.com/UtsavChalodiya/Applied-Data-Science-1)
+The notebook is the source of truth for the specific assignment. For a complete case study, add the dataset source and licence, the main analytical questions, a short summary of the strongest findings, and any limitations directly to this README.
 
 ## Author
 
 **Utsav Chalodiya**  
 [GitHub profile](https://github.com/UtsavChalodiya)
-
----
-
-This README documents the repository at a high level. See the notebook for the specific dataset, methods, and findings.
